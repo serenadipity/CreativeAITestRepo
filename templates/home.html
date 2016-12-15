@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% block contents %}
+
+<body>
+	<div class="jumbotron">
+		<h1 class="center" id="coolfont">Creative AI</h1>
+	</div>
+
+	<div class="container" align="center">
+
+		<button type="button" id="" class="btn btn-button-home btn-lg" data-target="#myCarousel" data-slide-to="0">Original</button>
+		<button type="button" id="" class="btn btn-button-home btn-lg" data-target="#myCarousel" data-slide-to="1">Transposed 3rd</button>
+		<button type="button" id="" class="btn btn-button-home btn-lg" data-target="#myCarousel" data-slide-to="2">Transposed 5th</button>
+		<button type="button" id="" class="btn btn-button-home btn-lg" data-target="#myCarousel" data-slide-to="3">Original + 3</button>
+		<button type="button" id="" class="btn btn-button-home btn-lg" data-target="#myCarousel" data-slide-to="4">Original + 5</button>
+		<button type="button" id="" class="btn btn-button-home btn-lg" data-target="#myCarousel" data-slide-to="5">Original + 3 + 5</button>
+		<button type="button" id="" class="btn btn-button-home btn-lg" data-target="#myCarousel" data-slide-to="6">Faster</button>
+
+		<br><br>
+
+		<div id="myCarousel" class="carousel slide">
+		<!--Indicators -->
+			<ol class="carousel-indicators">
+      			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      			<li data-target="#myCarousel" data-slide-to="1"></li>
+    			<li data-target="#myCarousel" data-slide-to="2"></li>
+    			<li data-target="#myCarousel" data-slide-to="3"></li>
+      			<li data-target="#myCarousel" data-slide-to="4"></li>
+    			<li data-target="#myCarousel" data-slide-to="5"></li>
+    			<li data-target="#myCarousel" data-slide-to="6"></li>
+    		</ol>
+
+    		<div class="carousel-inner" role="listbox">
+
+    		<div class="item active">
+    			<div align="center">
+    				<video onclick="this.paused? this.play() : this.pause()" width="1024">
+    				<source src="static/FinalProduct.mp4" width="1024" type="video/mp4">
+    				</video>
+    			</div>
+    		</div>
+
+    		<div class="item">
+    			<div align="center">
+    				<video onclick="this.paused? this.play() : this.pause()" width="1024">
+    				<source src="static/FinalProducttransThird.mp4" width="1024" type="video/mp4">
+    				</video>
+    			</div>
+    		</div>
+
+    		<div class="item">
+    			<div align="center" width="1024">
+    				<video onclick="this.paused? this.play() : this.pause()" width="1024">
+    				<source src="static/FinalProducttransFifth.mp4" width="1024" type="video/mp4">
+    				</video>
+    			</div>
+    		</div>
+
+    		<div class="item">
+    			<div align="center">
+    				<video onclick="this.paused? this.play() : this.pause()" width="1024">
+    				<source src="static/FinalProductMixOneandThird.mp4" width="1024" type="video/mp4">
+    				</video>
+    			</div>
+    		</div>
+
+    		<div class="item">
+    			<div align="center">
+    				<video onclick="this.paused? this.play() : this.pause()" width="1024">
+    				<source src="static/FinalProductMixOneandFifth.mp4" width="1024" type="video/mp4">
+    				</video>
+    			</div>
+    		</div>
+
+    		<div class="item">
+    			<div align="center">
+    				<video onclick="this.paused? this.play() : this.pause()" width="1024">
+    				<source src="static/FinalProductOneandFifth.mp4" width="1024" type="video/mp4">
+    				</video>
+    			</div>
+    		</div>
+
+    		<div class="item">
+    			<div align="center">
+    				<video onclick="this.paused? this.play() : this.pause()" width="1024">
+    				<source src="static/FinalProductFaster.mp4" width="1024" type="video/mp4">
+    				</video>
+    			</div>
+    		</div>
+
+    		</div>
+
+    		<!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+  </div>
+
+
+  <div class="btn-group btn-space">
+    <a href="#" data-toggle="modal" data-target="#aboutpage"><button class="btn btn-button-home" type="button">About</button></a>
+  </div>
+
+<div class="modal fade" id="aboutpage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h1 class="modal-title" id="myModalLabel">About</h1>
+      </div>
+      <div class="modal-body">
+        <p><b>By Serena Chan, Leo Huang, Erina Tamada-Wu, Maureen Wiltsee</b></p>
+        <p> A program that generates new lyrics and melodies using our constructed machine learning model. </p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Go Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+
+{% endblock %}
+
